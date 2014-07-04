@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+	max-width: 1060px;
+	min-height: 500px;
+	border: 1px solid red;
+}
+
+#mainMenu {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#mainMenu ul {
+	list-style: none;
+	width: 100%;
+	float: left;
+	text-align: center;
+	border: 1px solid #09C;
+}
+
+.mainMenuItem {
+	margin-right: 5%;
+	display: inline;
+	cursor: pointer;
+}
+
+#view {
+	width: 96%;
+	margin-left: 2%;
+	float: left;
+	margin-top: 20px;
+	border: 1px solid #990;	
+}

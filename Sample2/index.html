@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+    <head>
+        <title>Angular JS</title>
+        <!--ANGULAR-->
+        <script src="js/vendors/angular/angular.js" type="text/javascript"></script> 
+        <script src="js/vendors/angular/angular-route.js" type="text/javascript"></script> 
+        
+        <!--BOOTSTRAP-->
+        <!--<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="css/docs.css" rel="stylesheet" media="screen">     
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>   
+        <script src="js/bootstrap.js"></script>-->  
+         
+        <!--CUSTOM-->  
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script src="js/app.js" type="text/javascript"></script>  
+    </head>
+    
+    <body>
+    	<div id="container">
+        	<nav id="mainMenu" ng-controller="mainMenuNavController">
+                <ul>
+                    <li class="mainMenuItem" ng-click="showNewPage('/home'); nextFunct()">Home</li>
+                    <li class="mainMenuItem" ng-click="showNewPage('/gallery')">Gallery</li>                    
+                    <li class="mainMenuItem" ng-click="showNewPage('/participate')">Participate</li>
+                    <li class="mainMenuItem" ng-click="showNewPage('/partners')">Partners</li>
+                    <li class="mainMenuItem" ng-click="showNewPage('/jury')">Jury</li>
+                    <li class="mainMenuItem" ng-click="showNewPage('/faq')">FAQ's</li>
+                </ul>
+            </nav>
+            
+        	<div id="view" ng-view></div>
+        </div>
+    </body>
+</html>
